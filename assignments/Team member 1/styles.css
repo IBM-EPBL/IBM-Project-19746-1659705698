@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
+
+:root{
+ --bgcolor: #f4f4f4;
+ --resume-left-bgc: #fff;
+ --resume-right-bgc: #232941;
+ --green: #0ea73a;
+ --white: #fff;
+ --primary: #232941;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: var(--bgcolor);
+	font-size: 14px;
+	color: var(--primary);
+}
+
+.wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.resume_design{
+	width: 700px;
+	max-width: 100%;
+	display: flex;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+.resume_design .resume_left{
+	background: var(--resume-left-bgc);
+	width: 400px;
+	padding: 30px;
+}
+
+.resume_design .resume_right{	
+	background: var(--resume-right-bgc);
+	color: var(--white);
+	width: 300px;
+}
+
+.resume_design .resume_left > div{
+	margin-bottom: 30px;
+}
+
+.resume_design .resume_left > div:last-child{
+	margin-bottom: 0;
+}
+
+.resume_design .resume_left .button{
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	border: 2px solid var(--green);
+	color: var(--green);
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-size: 12px;
+}
+
+.resume_design .resume_left .about_sec p{
+	margin-bottom: 10px;
+}
+
+.resume_design .resume_left .about_sec p:last-child{
+	margin-bottom: 0;
+}
+
+.resume_design .resume_left ul li{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.resume_design .resume_left ul li:last-child{
+	padding-bottom: 0;
+}
+
+.resume_design .resume_left ul li{
+	border-left: 1px solid var(--green);
+}
+
+.resume_design .resume_left ul li:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -5px;
+	width: 8px;
+	height: 8px;
+	background: var(--green);
+	border-radius: 50%;
+}
+
+.resume_design .resume_left ul li .title{
+	font-weight: 900;
+	font-size: 16px;
+}
+
+.resume_design .resume_left ul li .sub_title{
+	margin: 3px 0;
+}
+
+.resume_design .resume_left ul li .content{
+	font-weight: 300;
+}
+
+.resume_design .resume_left ul li .item_grp{
+	position: relative;
+}
+
+.resume_design .resume_left ul li .item_grp .timeline{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+	color: var(--green);
+	font-weight: 900;
+}
+
+.resume_design .resume_right .profile_sec,
+.resume_design .resume_right .contact_sec,
+.resume_design .resume_right .skills_sec{
+	padding: 30px;
+}
+
+.resume_design .resume_right .profile_sec img{
+	width: 125px;
+}
+
+.resume_design .resume_right .profile_sec .profile_info{
+	margin-top: 20px;
+}
+
+.resume_design .resume_right .profile_sec .profile_info .first_name,
+.resume_design .resume_right .profile_sec .profile_info .last_name{
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.resume_design .resume_right .profile_sec .profile_info .last_name{
+	font-weight: 900;
+}
+
+.resume_design .resume_right .profile_sec .profile_info .role{
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+
+.resume_design .resume_right .contact_sec,
+.resume_design .resume_right .skills_sec{
+	position: relative;
+}
+
+.resume_design .resume_right .contact_sec{
+	background: var(--green);
+}
+
+.resume_design .resume_right .button{
+	text-transform: uppercase;
+	background: var(--white);
+	color: var(--primary);
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 20px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-size: 12px;
+	position: absolute;
+	top: -13px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.resume_design .resume_right .contact_sec ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.resume_design .resume_right .contact_sec ul li:last-child{
+	margin-bottom: 0;
+}
+
+.resume_design .resume_right .contact_sec ul li .icon{
+	margin-right: 10px;
+}
+
+.resume_design .resume_right .contact_sec ul li .content .title{
+	margin-bottom: 3px;
+	font-weight: 900;
+}
+
+.resume_design .resume_right .skills_sec ul li{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.resume_design .resume_right .skills_sec ul li:last-child{
+	margin-bottom: 0;
+}
+
+.resume_design .resume_right .skills_sec ul li .content{
+	width: 100px;
+}
+
+.resume_design .resume_right .skills_sec ul li .bar_wrap{
+	width: calc(100% - 100px);
+	height: 10px;
+	border-radius: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.resume_design .resume_right .skills_sec ul li .bar_wrap .bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: var(--white);
+}
